@@ -5,7 +5,7 @@
   "author": "Gurusubramaniam Sundararaman",
   "main": "index.js",
     "engines": {
-        "node": "2.13.2"
+        "node": "0.12.7"
     },
   "scripts": {
     "test": "grunt test",
