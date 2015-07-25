@@ -1,0 +1,5 @@
+{>"layouts/master" /}
+
+{<body}
+    <h1>This is the feed back page route</h1>
+{/body}
