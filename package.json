@@ -4,6 +4,9 @@
   "description": "Rasas Kitchen Web site with Kraken Node application",
   "author": "Gurusubramaniam Sundararaman",
   "main": "index.js",
+    "engines": {
+        "node": "0.10.x"
+    },
   "scripts": {
     "test": "grunt test",
     "start": "node index.js"
