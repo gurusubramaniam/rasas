@@ -1,0 +1,49 @@
+header {
+    text-align: center;
+}
+body {
+    .helveticaNeueLight();
+}
+header,
+.content {
+    width: 75%;
+    margin: 0 auto;
+
+    .nav {
+        overflow: auto;
+
+
+        ul {
+            .reset();
+            list-style: none;
+
+
+            li {
+                margin-right: 10px;
+                display: inline-block;
+
+                border: 1px solid @borderColors;
+                .border-radius();
+                background: #33669a;
+
+                a {
+                    padding: 10px;
+                    width: 80px;
+                    display: block;
+
+                    color: #ccc;
+                    text-align: center;
+                    text-decoration: none;
+
+                    &:hover {
+                        background:#000000;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
