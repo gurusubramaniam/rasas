@@ -1,0 +1,22 @@
+{>"layouts/master" /}
+
+{<body}
+
+    <form method="post">
+        <input type="text" name="userName"/>
+        <input type="submit" value="Add Data" />
+    </form>
+
+    <form method="post">
+        <input type="hidden" name="emptyTable" value="1">
+        <input type="submit" value="Delete All Data" />
+    </form>
+
+    <table>
+        {#adminUsers}
+            <tr>
+                <td>{userName}</td>
+            </tr>
+        {/adminUsers}
+    </table>
+{/body}
