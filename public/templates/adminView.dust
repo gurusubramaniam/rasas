@@ -1,6 +1,6 @@
 {>"layouts/master" /}
 
-{<body}
+{<section}
 
     <form method="post">
         <input type="text" name="userName"/>
@@ -19,4 +19,4 @@
             </tr>
         {/adminUsers}
     </table>
-{/body}
+{/section}

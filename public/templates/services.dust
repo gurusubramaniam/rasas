@@ -1,5 +1,5 @@
 {>"layouts/master" /}
 
-{<body}
+{<section}
     <h1>This is the services page route</h1>
-{/body}
+{/section}
