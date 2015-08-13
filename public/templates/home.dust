@@ -1,5 +1,0 @@
-{>"layouts/master" /}
-
-{<body}
-    <h1>This is the home page route</h1>
-{/body}
