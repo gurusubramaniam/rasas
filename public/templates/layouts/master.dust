@@ -11,6 +11,5 @@
         {>"comp/nav" /}
         {+section /}
     </section>
-    <script data-main="/js/app" src="/js/lib/require.js"></script>
 </body>
 </html>
