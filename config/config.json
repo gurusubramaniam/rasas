@@ -2,15 +2,15 @@
 
     "express": {
         "view cache": false,
-        "view engine": "js",
+        "view engine": "dust",
         "views": "path:./public/templates"
     },
 
     "view engines": {
-        "js": {
+        "dust": {
             "module": "engine-munger",
             "renderer": {
-                "method": "js",
+                "method": "dust",
                 "arguments": [
                     { "cache": true },
                     {
