@@ -36,7 +36,7 @@
 
         "static": {
             "module": {
-                "arguments": [ "path:./.build" ]
+                "arguments": [ "path:./public" ]
             }
         },
 
