@@ -3,7 +3,7 @@
     "express": {
         "view cache": false,
         "view engine": "js",
-        "views": "path:./.build/templates"
+        "views": "path:./public/templates"
     },
 
     "view engines": {
