@@ -1,9 +1,11 @@
 {
+    "requestURI": "/rasasKitchen",
 
     "express": {
         "view cache": false,
         "view engine": "dust",
-        "views": "path:./public/templates"
+        "views": "path:./public/templates",
+        "mountpath": "/rasaskitchen"
     },
 
     "view engines": {
@@ -40,12 +42,23 @@
             }
         },
 
+
+
         "router": {
+
             "module": {
                 "arguments": [{ "directory": "path:./routes" }]
             }
         },
 
+        "dataModel": {
+            "enabled": true,
+            "priority": 100,
+            "module": {
+                "name": "path:./middleware/middleWare",
+                "method": "setPageData"
+            }
+        },
 
         "expressView": {
             "priority": 100,
@@ -54,6 +67,7 @@
                 "name": "engine-munger/lib/expressView"
             }
         },
+
 
 
         "fileNotFound": {
