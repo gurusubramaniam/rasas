@@ -1,9 +1,9 @@
 <nav class="nav">
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/menu">Menu</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/feedback">FeedBack</a></li>
-        <li><a href="/contactus">Contact Us</a></li>
+        <li><a href="/rasaskitchen">Home</a></li>
+        <li><a href="/rasaskitchen/menu">Menu</a></li>
+        <li><a href="/rasaskitchen/services">Services</a></li>
+        <li><a href="/rasaskitchen/feedback">FeedBack</a></li>
+        <li><a href="/rasaskitchen/contactus">Contact Us</a></li>
     </ul>
 </nav>
