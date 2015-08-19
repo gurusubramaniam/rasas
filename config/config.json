@@ -9,10 +9,10 @@
     },
 
     "view engines": {
-        "dust": {
+        "js": {
             "module": "engine-munger",
             "renderer": {
-                "method": "dust",
+                "method": "js",
                 "arguments": [
                     { "cache": true },
                     {
