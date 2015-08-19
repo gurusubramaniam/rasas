@@ -3,7 +3,7 @@
 
     "express": {
         "view cache": false,
-        "view engine": "dust",
+        "view engine": "js",
         "views": "path:./.build/templates",
         "mountpath": "/rasaskitchen"
     },
