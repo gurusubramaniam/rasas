@@ -4,7 +4,7 @@
     "express": {
         "view cache": false,
         "view engine": "dust",
-        "views": "path:./public/templates",
+        "views": "path:./.build/templates",
         "mountpath": "/rasaskitchen"
     },
 
