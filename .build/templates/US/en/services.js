@@ -1,0 +1,1 @@
+(function(){dust.register("services",body_0);var blocks={"section":body_1};function body_0(chk,ctx){ctx=ctx.shiftBlocks(blocks);return chk.p("layouts/master",ctx,{});}body_0.__dustBody=!0;function body_1(chk,ctx){ctx=ctx.shiftBlocks(blocks);return chk.w("<h1>This is the services page route</h1>");}body_1.__dustBody=!0;return body_0;})();

@@ -1,0 +1,7 @@
+
+app.js
+----------------
+lib/jquery.js
+lib/underscore.js
+lib/backbone.js
+app.js
