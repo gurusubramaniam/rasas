@@ -6,37 +6,6 @@
  * @email gurutii@gmail.com
  */
 
-/**
- *
- * Method for setting up all the common model variables
- * This method gets executed from the config file in priority order
- * This method returns a method which sets the JS base url and CSS base url based on the Environment
- *
- *
- * @returns {Function}
- */
-exports.setPageData = function setPageData() {
-    return function setPageData(req, res, next) {
-        var mountPath = req.baseUrl,
-            hostName = req.get('host'),
-            jsBaseUrl = hostName + mountPath + '/.build/public/js/',
-            cssBaseUrl = hostName + mountPath + '/.build/public/css/';
-
-        if( req && req.devEnv) {
-            console.log('JS and CSS are served from local public files');
-            jsBaseUrl = mountPath + '/js/';
-            cssBaseUrl = mountPath + '/css/';
-        }
-
-        req.model = req.model || {};
-        req.model.data = req.model && req.model.data || {};
-        req.model.data.jsBaseUrl = jsBaseUrl;
-        req.model.data.cssBaseUrl = cssBaseUrl;
-        console.log('info : Base url Set successfully');
-        next();
-    };
-};
-
 
 /**
  *

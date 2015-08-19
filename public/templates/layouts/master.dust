@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>{+title /}</title>
-    <link rel="stylesheet" href="{data.cssBaseUrl}app.css" />
+    <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
     {>"comp/header" /}
@@ -11,6 +11,6 @@
         {>"comp/nav" /}
         {+section /}
     </section>
-     <script data-main="/js/app" src="{data.jsBaseUrl}lib/require.js"></script>
+     <script data-main="js/app" src="js/lib/require.js"></script>
 </body>
 </html>

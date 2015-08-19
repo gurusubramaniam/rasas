@@ -32,7 +32,6 @@ app.on('start', function () {
 });
 
 app.use(function(req, res, next) {
-    app.use(express.static('public'));
     req.devEnv = (app.get('env') === 'development') ? true : false;
     next();
 });

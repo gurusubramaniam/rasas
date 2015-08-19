@@ -51,15 +51,6 @@
             }
         },
 
-        "dataModel": {
-            "enabled": true,
-            "priority": 100,
-            "module": {
-                "name": "path:./middleware/middleWare",
-                "method": "setPageData"
-            }
-        },
-
         "expressView": {
             "priority": 100,
             "enabled": true,
@@ -67,8 +58,6 @@
                 "name": "engine-munger/lib/expressView"
             }
         },
-
-
 
         "fileNotFound": {
             "enabled": true,

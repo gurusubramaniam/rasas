@@ -2,9 +2,11 @@
 
 
 requirejs.config({
-    baseUrl: 'js/lib',
+    baseUrl: 'js/',
     paths: {
-        'view' : '../views'
+        'jquery' : 'lib/jquery',
+        'underscore' : 'lib/underscore',
+        'backbone' : 'lib/backbone'
     },
     shim: {
         backbone: {
