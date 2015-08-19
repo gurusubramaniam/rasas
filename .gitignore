@@ -1,6 +1,5 @@
 .idea/*.*
 .settings
-.build
 .DS_Store
 *.log
 /tmp
