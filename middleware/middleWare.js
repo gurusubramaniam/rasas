@@ -21,10 +21,14 @@ exports.renderView = function (req, res, next) {
     var viewName = req && req.route && req.route.path || 'index';
 
     viewName = (viewName === '/') ? 'index' : viewName.replace('/','');
+    req.model = req.model || {};
+    req.model.data = req.model.data || {};
+    req.model.data.viewName = viewName;
+
     res.format({
         html: function () {
             //This is for the development environment to check the JSON alone is requested by the user.
-            if(req.query._mode === 'json' && req.env === 'development') {
+            if(req.query._mode === 'json' && req.devEnv) {
                 console.log('INFO :: serving JSON in development environment with _mode=json');
                 res.json(req.model);
             } else {

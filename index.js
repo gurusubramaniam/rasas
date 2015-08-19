@@ -32,7 +32,7 @@ app.on('start', function () {
 });
 
 app.use(function(req, res, next) {
-    req.devEnv = (app.get('env') === 'development') ? true : false;
+    req.devEnv = (app.get('env') === 'development' || app.get('env') === 'staging') ? true : false;
     next();
 });
 
