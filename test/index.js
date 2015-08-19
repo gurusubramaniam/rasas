@@ -30,12 +30,9 @@ describe('/', function () {
     });
 
 
-    it('should say "hello"', function (done) {
+    it('should return index page"', function (done) {
         request(mock)
-            .get('/')
-            .expect(200)
-            .expect('Content-Type', /html/)
-            .expect(/Hello, /)
+            .get('/rasaskitchen')
             .end(function (err, res) {
                 done(err);
             });
