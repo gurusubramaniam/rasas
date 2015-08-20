@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {>"inc/metaHeaders" /}
     <title>{+title /}</title>
-
     <link rel="stylesheet" href="css/app.css" />
-     {>"inc/googleAnalytics"/}
+     {>"inc/googleAnalytics" /}
 </head>
 <body>
     {>"comp/header" /}
