@@ -1,6 +1,6 @@
-"use strict"
+'use strict';
 
-exports.insertadminUsers = function(req, res, next) {
+exports.insertAdminUsers = function(req, res, next) {
     var db = req.db,
         collection = db.get('userCollection'),
         emptyTable = req.body.emptyTable || 0;
@@ -11,24 +11,24 @@ exports.insertadminUsers = function(req, res, next) {
             if (err) {
                 console.log(err);
             } else {
-                console.log("Deleted table successfully");
+                console.log('Deleted table successfully');
             }
         });
 
     } else {
         collection.insert({
-            "userName" : req.body.userName,
-            "password" : req.body.password || "admin"
+            'userName' : req.body.userName,
+            'password' : req.body.password || 'admin'
         }, function (err, doc){
             if (err) {
-                console.log('failed to insert datat o userCollection', err);
+                console.log('failed to insert datat o userCollection ' +  err);
             } else {
-                console.log('inserted data successfully', doc);
+                console.log('inserted data successfully ' + doc);
             }
             next();
         });
     }
-}
+};
 
 exports.pickAdminUsersList = function (req, res, next){
     var db = req.db;
@@ -40,4 +40,4 @@ exports.pickAdminUsersList = function (req, res, next){
         req.model.data.adminUsers = docs;
         next();
     });
-}
+};
