@@ -1,7 +1,9 @@
 {>"layouts/master" /}
-
+{<title}
+    {@pre type="content" key="index.pageTitle"/}
+{/title}
 {<section}
     <div class="container">
-        <p>{@pre type="content" key="rasasDescription"/}</p>
+        <p>{@pre type="content" key="index.Description"/}</p>
     </div>
 {/section}
