@@ -1,7 +1,9 @@
 {>"layouts/master" /}
-
+{<title}
+    {@pre type="content" key="contactUs.pageTitle"/}
+{/title}
 {<section}
     <div class="container">
-        <h1>This is the contact us page route</h1>
+        <p>{@pre type="content" key="contactUs.Description"/}</p>
     </div>
 {/section}

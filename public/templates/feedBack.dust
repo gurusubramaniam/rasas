@@ -1,5 +1,9 @@
 {>"layouts/master" /}
-
+{<title}
+    {@pre type="content" key="feedBack.pageTitle"/}
+{/title}
 {<section}
-    <h1>This is the feed back page route</h1>
+    <div class="container">
+        <p>{@pre type="content" key="feedBack.Description"/}</p>
+    </div>
 {/section}
