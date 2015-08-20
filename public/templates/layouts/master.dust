@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <title>{+title /}</title>
-    {>"inc/metaHeaders"/}
+
     <link rel="stylesheet" href="css/app.css" />
      {>"inc/googleAnalytics"/}
 </head>
