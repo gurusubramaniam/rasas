@@ -48,3 +48,37 @@ exports.renderView = function (req, res, next) {
         }
     });
 };
+
+
+
+
+exports.webEnquiry = function (req, res, next) {
+    console.log('EXECUTION :: WebEnquiry Email initated');
+    var nodeMailer = require('nodemailer'),
+        callback = function(err, info) {
+            if(!err) {
+                console.log('INFO :: Feedback Email Status');
+                req.session.emailSent = true;
+            } else {
+                req.session.emailSent = false;
+                console.log('ERROR :: FeedBack Email Send Failed', err);
+            }
+            next();
+
+        },
+        transporter = nodeMailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: 'gurutii@gmail.com',
+                    pass: 'Paypal1234'
+                }
+            });
+
+    transporter.sendMail({
+       from: req.body.senderEmail,
+        to: 'gurutii@yahoo.com',
+        subject: 'feeBack TEST for rasas',
+        text: req.body.enquiry
+    }, callback);
+
+};

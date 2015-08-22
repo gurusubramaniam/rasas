@@ -7,5 +7,5 @@ module.exports = function (router) {
     router({path: '/menu'}).get(middleWare.renderView);
     router({path: '/services'}).get(middleWare.renderView);
     router({path: '/feedBack'}).get(middleWare.renderView);
-    router({path: '/contactUs'}).get(middleWare.renderView);
+    router({path: '/contactUs'}).get(middleWare.renderView).post(middleWare.webEnquiry ,middleWare.renderView);
 };
