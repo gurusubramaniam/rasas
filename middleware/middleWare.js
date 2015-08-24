@@ -55,6 +55,7 @@ exports.renderView = function (req, res, next) {
 exports.webEnquiry = function (req, res, next) {
     console.log('EXECUTION :: WebEnquiry Email initated');
     var nodeMailer = require('nodemailer'),
+        subject = req.route && req.route.path || 'feedBack',
         callback = function(err, info) {
             if(!err) {
                 console.log('INFO :: Feedback Email Status');
@@ -75,9 +76,9 @@ exports.webEnquiry = function (req, res, next) {
             });
 
     transporter.sendMail({
-       from: req.body.senderEmail,
         to: 'gurutii@yahoo.com',
-        subject: 'feeBack TEST for rasas',
+        cc: req.body.senderEmail,
+        subject: subject.replace('/', '') + 'Web Enquiry',
         text: req.body.enquiry
     }, callback);
 
