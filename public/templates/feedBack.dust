@@ -7,9 +7,11 @@
         <p>{@pre type="content" key="feedBack.Description"/}</p>
         <fieldset>
             <legend>Feed Back on our service</legend>
-            <p><input type="email" name="senderEmail" value="sample@pp.com" placeholder="Enter your email address" required="required" /></p>
-            <p><textarea  name="enquiry" placeholder="Let us know your concern or enquiry" required="required" /></textarea></p>
-            <p><input type="submit" value="Send Email"></p>
+            <form method="post" action="">
+                <p><input type="email" name="senderEmail" value="sample@pp.com" placeholder="Enter your email address" required="required" /></p>
+                <p><textarea  name="enquiry" placeholder="Let us know your concern or enquiry" required="required" /></textarea></p>
+                <p><input type="submit" value="Send Email"></p>
+            </form>
         </fieldset>
     </div>
 {/section}

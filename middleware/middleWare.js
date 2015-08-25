@@ -58,7 +58,7 @@ exports.webEnquiry = function (req, res, next) {
         subject = req.route && req.route.path || 'feedBack',
         callback = function(err, info) {
             if(!err) {
-                console.log('INFO :: Feedback Email Status');
+                console.log('INFO :: Feedback Email Status', info);
                 req.session.emailSent = true;
             } else {
                 req.session.emailSent = false;
@@ -78,7 +78,7 @@ exports.webEnquiry = function (req, res, next) {
     transporter.sendMail({
         to: 'gurutii@yahoo.com',
         cc: req.body.senderEmail,
-        subject: subject.replace('/', '') + 'Web Enquiry',
+        subject: subject.replace('/', '') + ' -  Web Enquiry',
         text: req.body.enquiry
     }, callback);
 
