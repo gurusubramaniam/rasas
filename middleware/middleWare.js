@@ -78,7 +78,7 @@ exports.webEnquiry = function (req, res, next) {
     transporter.sendMail({
         to: 'gurutii@yahoo.com',
         cc: req.body.senderEmail,
-        subject: subject.replace('/', '') + ' -  Web Enquiry',
+        subject: (subject.replace('/', '')).toUpperCase() + ' -  Web Enquiry',
         text: req.body.enquiry
     }, callback);
 

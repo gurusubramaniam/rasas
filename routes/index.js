@@ -6,6 +6,6 @@ module.exports = function (router) {
     router({path: '/'}).get(middleWare.renderView);
     router({path: '/menu'}).get(middleWare.renderView);
     router({path: '/services'}).get(middleWare.renderView);
-    router({path: '/feedBack'}).get(middleWare.renderView).post(middleWare.webEnquiry ,middleWare.renderView)
-    router({path: '/contactUs'}).get(middleWare.renderView).post(middleWare.webEnquiry ,middleWare.renderView);
+    router({path: '/feedBack'}).get(middleWare.renderView).post(middleWare.webEnquiry, middleWare.renderView);
+    router({path: '/contactUs'}).get(middleWare.renderView).post(middleWare.webEnquiry, middleWare.renderView);
 };
